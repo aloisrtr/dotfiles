@@ -1,0 +1,42 @@
+set selection-clipboard clipboard
+set adjust-open "best-fit"
+set scroll-page-aware "true"
+set smooth-scroll "true"
+
+set font "FiraCode Nerd Font 12"
+set default-bg "#282828" #00
+set default-fg "#ebdbb2" #01
+
+set statusbar-fg "#282828" #04
+set statusbar-bg "#ebdbb2" #01
+
+set inputbar-bg "#282828" #00 currently not used
+set inputbar-fg "#ebdbb2" #02
+
+set notification-error-bg "#282828" #08
+set notification-error-fg "#fb4934" #00
+
+set notification-warning-bg "#282828" #08
+set notification-warning-fg "#fabd2f" #00
+
+set highlight-color "#b8bb26" #0A
+set highlight-active-color "#d3869b" #0D
+
+set completion-highlight-fg "#98971a" #02
+set completion-highlight-bg "#282828" #0C
+
+set completion-bg "#282828" #02
+set completion-fg "#98971a" #0C
+
+set notification-bg "#90A959" #0B
+set notification-fg "#151515" #00
+
+set recolor "true"
+set recolor-lightcolor "#282828" #00
+set recolor-darkcolor "#ebdbb2" #06
+set recolor-reverse-video "true"
+set recolor-keephue "true"
+
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen

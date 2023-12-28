@@ -1,0 +1,68 @@
+{
+    "layer": "top",
+    "position": "top",
+
+    "modules-left": [
+        "hyprland/workspaces",
+	    "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "wireplumber",
+	    "memory",
+	    "cpu",
+	    "disk",
+        "battery",
+	    "tray"
+    ],
+
+    "hyprland/workspaces": {
+    	"show-special": true,
+	    "format": "{name}",
+	    "persistent-workspaces": {
+	        "*": 5,
+	    }
+    },
+    "hyprland/window": {
+        "format": "> {title}",
+	    "separate-outputs": true
+    },
+
+    "clock": {
+    	"format": "{:%H:%M}"
+    },
+
+    "wireplumber": {
+    	"format": "vol {volume:2}%"
+    },
+    "memory": {
+    	"interval": 10,
+	    "format": "mem {percentage:2}%"
+    },
+    "cpu": {
+    	"interval": 10,
+	    "format": "cpu {usage:2}%"
+    },
+    "disk": {
+    	"interval": 60,
+	    "format": "disk {percentage_used:2}%",
+	    "path": "/"
+    },
+    "battery": {
+        "states": {
+            "warning": 20,
+            "critical": 15
+        },
+        "format": "pow {capacity:2}%",
+        "format-charging": "",
+        "format-plugged": "",
+        "format-full": "",
+        "format-alt": "",
+    },
+    "tray": {
+    	"icon-size": 15,
+	    "spacing": 10
+    }
+}

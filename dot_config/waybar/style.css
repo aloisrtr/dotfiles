@@ -1,0 +1,33 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: FiraCode Nerd Font, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    min-height: 0;
+    color: #ebdbb2;
+    background: #282828;
+    margin: 1px;
+    transition-duration: 0.2s;
+}
+
+#window {
+    padding-left: 10px;
+    padding-right: 10px;
+    transition-duration: 0;
+}
+window#waybar.empty #window {
+    font-size: 0;
+    transition-duration: 0;
+}
+
+#workspaces button:hover * {
+    color: #d79921;
+}
+#workspaces button.active * {
+    color: #fabd2f;
+}
+
+#cpu, #memory, #wireplumber, #disk, #battery, #tray, #clock {
+    padding-right: 10px;
+}
